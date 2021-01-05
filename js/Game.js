@@ -63,11 +63,12 @@ class Game {
         cars[index-1].y = y;
 
         if (index === player.index){
-          cars[index - 1].shapeColor = "red";
+          fill("red");
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y
         }
-       
+       else
+       {fill("white");}
         //textSize(15);
         //text(allPlayers[plr].name + ": " + allPlayers[plr].distance, 120,display_position)
       }
